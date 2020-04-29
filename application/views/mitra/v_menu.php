@@ -133,23 +133,9 @@
   </div>
 </div>
 
+
+
 <style type="text/css">
-/*#bungkus {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#bungkus.toggled {
-    padding-left: 250px;
-}
-*/
-
-/*#content{
-  padding-top: 0px;
-}*/
 
 #menu_bar{
   margin-top: 20px;
