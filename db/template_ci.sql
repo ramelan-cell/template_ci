@@ -137,7 +137,7 @@ CREATE TABLE `prm_menu_access_mitra` (
 
 /*Data for the table `prm_menu_access_mitra` */
 
-insert  into `prm_menu_access_mitra`(`id`,`user_id`,`id_group_menu`,`id_menu`,`divisi_id`,`jabatan`,`created_date`,`created_time`,`created_by`,`updated_date`,`updated_time`,`updated_by`) values (1,'1','1','1,2,173,175','1','1',NULL,NULL,NULL,'2020-04-27','20:08:40',1);
+insert  into `prm_menu_access_mitra`(`id`,`user_id`,`id_group_menu`,`id_menu`,`divisi_id`,`jabatan`,`created_date`,`created_time`,`created_by`,`updated_date`,`updated_time`,`updated_by`) values (1,'1','1','1,2,173,175','1','1',NULL,NULL,NULL,'2020-04-29','06:16:54',1);
 
 /*Table structure for table `prm_menu_group_mitra` */
 
@@ -198,12 +198,13 @@ CREATE TABLE `prm_setting_warna` (
   `user_id` int(11) DEFAULT NULL,
   `warna` varchar(100) DEFAULT NULL,
   `menu` varchar(50) DEFAULT NULL,
+  `animasi` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 /*Data for the table `prm_setting_warna` */
 
-insert  into `prm_setting_warna`(`id`,`user_id`,`warna`,`menu`) values (1,NULL,'#ee7c1c','atas'),(5,1,'#ff0000','samping');
+insert  into `prm_setting_warna`(`id`,`user_id`,`warna`,`menu`,`animasi`) values (1,NULL,'#ee7c1c','atas','flipInY'),(5,1,'#000040','atas','flip');
 
 /*Table structure for table `prm_user` */
 

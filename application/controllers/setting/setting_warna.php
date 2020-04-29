@@ -38,15 +38,16 @@ class Setting_warna extends CI_Controller{
 		$created_by = $this->session->userdata('USER_ID');
 		$warna = $this->input->post('warna');
 		$menu = $this->input->post('menu');
+		$animasi = $this->input->post('animasi');
 
 		$query ="SELECT * FROM $setting_warna WHERE user_id ='$created_by' ";
 		$result = $this->db->query($query);
 		$count = $result->num_rows();
 
 		if($count > 0){
-			$query ="UPDATE $setting_warna SET warna ='$warna' ,menu ='$menu' WHERE user_id ='$created_by' ";
+			$query ="UPDATE $setting_warna SET warna ='$warna' ,menu ='$menu' ,animasi ='$animasi' WHERE user_id ='$created_by' ";
 		}else{
-			$query ="INSERT INTO $setting_warna (user_id,warna,menu) VALUES ('$created_by','$warna','$menu') ";
+			$query ="INSERT INTO $setting_warna (user_id,warna,menu,animasi) VALUES ('$created_by','$warna','$menu','$animasi') ";
 		}
 
 		$ex_query= $this->db->query($query);

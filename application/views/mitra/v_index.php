@@ -24,7 +24,7 @@
         
         <script src="<?php echo base_url().'assets/fusioncharts/js/fusioncharts.js'?>" crossorigin="anonymous"></script>
         <script src="<?php echo base_url().'assets/fusioncharts/js/themes/fusioncharts.theme.fusion.js'?>"></script>
-        <script src="<?php echo base_url().'assets/js/index.js'?>" crossorigin="anonymous"></script>
+        <!-- <script src="<?php echo base_url().'assets/js/index.js'?>" crossorigin="anonymous"></script> -->
         <script src="<?php echo base_url().'assets/js/gauge.min.js'?>"></script>
         <script src="<?php echo base_url().'assets/js/sweetalert.min.js' ?>"></script>
         <script src="<?php echo base_url()?>assets/js/axios.min.js"></script>
@@ -35,7 +35,8 @@
         <link href="<?php echo base_url().'assets/css/simple-line-icons.css'?>" rel="stylesheet">
         <!-- <link href="<?php echo base_url().'assets/css/style.css'?>" rel="stylesheet"> -->
         <link href="<?php echo base_url().'assets/css/pace.min.css'?>" rel="stylesheet">
-
+        <link href="<?php echo base_url().'assets/css/animate.min.css'?>" rel="stylesheet">
+        
         <script src="<?php echo base_url().'assets/js/popper.min.js'?>"></script>
         <script src="<?php echo base_url().'assets/js/pace.min.js'?>"></script>
         <script src="<?php echo base_url().'assets/js/perfect-scrollbar.min.js'?>"></script>

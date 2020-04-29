@@ -28,7 +28,7 @@ if($bisnis == "INDIVIDU"){
             </button>
             <a class="navbar-brand menu-kiri v_home.php" href="javascript:void(0)" data-path="home/dashbaord" data-header="Home">
                 <div class="row" style="margin-top:-14px;">
-                   <img src="<?php echo base_url().'assets/images/kami-sistem.png'?>" width="40" height="40">&nbsp;<b><?php echo $nama_aplikasi;?></b>
+                   <img src="<?php echo base_url().'assets/images/logo.png'?>" width="40" height="40">&nbsp;<b><?php echo $nama_aplikasi;?></b>
                 </div>
             </a>
         </div>

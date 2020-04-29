@@ -11,17 +11,6 @@ $(function(){
             var url=class_name_array[class_name_array.length-1];
             var dataTable="path="+isPath+"&url="+url;
 
-            // alert(isPath);
-            // alert(url);
-
-            // $.ajax({
-            //     url : isPath+'/'+url,
-            //     cache : false,
-            //     success : function(data){
-            //         $('#content-mitra').html(data);
-            //         $('#panel-title').html(header);
-            //     }
-            // });
             $.ajax({
                 url : isPath,
                 cache : false,
@@ -31,6 +20,13 @@ $(function(){
                 }
             });
             $('#btn_collapse').trigger('click');
+
+            setTimeout(function(){
+                $('#animationSandbox').css('display','block');
+                var anim = 'bounceInLeft';
+                testAnim(anim);
+            },2000);
+
             return false;
         }catch(e){
             alert(e);
@@ -42,6 +38,14 @@ $(function(){
     history.pushState(null, null); window.addEventListener('popstate', function(event) { history.pushState(null, null); });
 
 });
+
+
+function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+};
+
 
 function formatNumber(evt) {
     var charCode = (evt.which) ? evt.which : event.keyCode
