@@ -94,6 +94,7 @@ $(function(){
 
     $(document).on("click", "a.menu-kiri", function(e){
         try{
+        	
             var $this=$(this);
             var class_name_array=$this.attr('class').replace('active').trim().split(' ');
             var isPath=$this.data('path');

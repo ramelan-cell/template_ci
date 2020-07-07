@@ -4,7 +4,7 @@
   $copyright = COPYRIGHT;
 ?>
 <div  id="bungkus" style="height: 250px;">
-  <div class="row" style="color: white">
+  <div class="row" style="color: white;margin-left: 20px;">
       <div class="col-md-6 item text">
           <h3><?php echo $PT ?></h3>
           <p><?php echo $alamat ?></p>
